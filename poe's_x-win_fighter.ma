@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: poe's_x-win_fighter.ma
-//Last modified: Wed, Nov 09, 2016 11:35:35 AM
+//Last modified: Wed, Nov 09, 2016 11:52:01 AM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,17 +13,17 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2A7249C0-AE46-E7EA-770F-8CB275091290";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.020387373820232 4.7035566632192012 0.060570567853211799 ;
-	setAttr ".r" -type "double3" -19.538352742587474 449.39999999979005 0 ;
+	setAttr ".t" -type "double3" 4.6294461544138699 9.0047880733786059 13.475255829611111 ;
+	setAttr ".r" -type "double3" -24.338352746602496 376.60000000016089 8.2971923186755122e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "28346F1F-DA49-F391-4572-789B374E1D01";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 6.1375842682208628;
+	setAttr ".coi" 15.432848471962917;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.23653564072908351 2.6509166593601998 0 ;
+	setAttr ".tp" -type "double3" 0.61229791963065816 2.6445355355551285 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -85,109 +85,43 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.46235612034797668 0.875 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 96 ".pt";
-	setAttr ".pt[0]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[2]" -type "float3" 0 0.67810094 0 ;
-	setAttr ".pt[3]" -type "float3" -0.0047511826 0.6983766 0 ;
-	setAttr ".pt[4]" -type "float3" 0 0.67810094 0 ;
-	setAttr ".pt[5]" -type "float3" -0.0047511826 0.6983766 0 ;
-	setAttr ".pt[6]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[8]" -type "float3" 0 0.18051194 0 ;
-	setAttr ".pt[9]" -type "float3" 0 -0.11087372 -0.092884108 ;
-	setAttr ".pt[10]" -type "float3" 0 0.23246619 0 ;
-	setAttr ".pt[11]" -type "float3" 0 1.7668213 -0.10592751 ;
-	setAttr ".pt[12]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[13]" -type "float3" 0 1.7668213 0 ;
-	setAttr ".pt[14]" -type "float3" -0.0047511826 0.6983766 0 ;
-	setAttr ".pt[15]" -type "float3" 0 1.7668213 0.10592751 ;
-	setAttr ".pt[16]" -type "float3" 0 0.67810094 0 ;
-	setAttr ".pt[17]" -type "float3" 0 0.23613948 0 ;
-	setAttr ".pt[18]" -type "float3" 0 0.23246619 0 ;
-	setAttr ".pt[19]" -type "float3" 0 -0.12029412 0.092884108 ;
-	setAttr ".pt[20]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[21]" -type "float3" 0 -0.30425534 0 ;
-	setAttr ".pt[23]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[24]" -type "float3" 0 0.23246619 0 ;
-	setAttr ".pt[25]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[26]" -type "float3" -0.015689824 0 0 ;
-	setAttr ".pt[27]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[28]" -type "float3" -0.017120367 -0.050559856 -0.068676159 ;
-	setAttr ".pt[30]" -type "float3" -0.015645852 0.18051194 0 ;
-	setAttr ".pt[31]" -type "float3" -0.0084303124 1.6907535 0 ;
-	setAttr ".pt[32]" -type "float3" 0 0.67810094 0 ;
-	setAttr ".pt[33]" -type "float3" -0.00902123 1.6907535 -0.091828339 ;
-	setAttr ".pt[34]" -type "float3" 0 1.7668213 0 ;
-	setAttr ".pt[35]" -type "float3" -0.0077383462 1.6907535 0 ;
-	setAttr ".pt[36]" -type "float3" -0.02096224 0.55211449 0 ;
-	setAttr ".pt[37]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[38]" -type "float3" -0.0056815394 1.6907535 0.091828339 ;
-	setAttr ".pt[39]" -type "float3" 0 0.55211449 0 ;
-	setAttr ".pt[40]" -type "float3" -0.021026846 0.23613948 0 ;
-	setAttr ".pt[41]" -type "float3" -0.017120367 -0.050559856 0 ;
-	setAttr ".pt[42]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[43]" -type "float3" -0.017120367 -0.050559856 0.068676159 ;
-	setAttr ".pt[44]" -type "float3" 0 -0.25320622 0 ;
-	setAttr ".pt[45]" -type "float3" -0.017120367 -0.050559856 0 ;
-	setAttr ".pt[46]" -type "float3" 0 0.18796076 0 ;
-	setAttr ".pt[47]" -type "float3" 0 0.18796076 0 ;
-	setAttr ".pt[49]" -type "float3" 0 0.18796076 0 ;
-	setAttr ".pt[50]" -type "float3" 0 0.23246619 0 ;
-	setAttr ".pt[51]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[52]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[53]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[54]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[57]" -type "float3" 0 0.18051194 0 ;
-	setAttr ".pt[58]" -type "float3" 0 0.56329989 0 ;
-	setAttr ".pt[59]" -type "float3" 0 0.45233935 0 ;
-	setAttr ".pt[60]" -type "float3" 0 1.2055438 0 ;
-	setAttr ".pt[61]" -type "float3" 0 0.56329989 0 ;
-	setAttr ".pt[62]" -type "float3" -0.016103411 0.56329989 0 ;
-	setAttr ".pt[63]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[64]" -type "float3" 0 1.2055438 0 ;
-	setAttr ".pt[65]" -type "float3" -0.0047511826 0.6983766 0 ;
-	setAttr ".pt[66]" -type "float3" 0 1.2055438 0 ;
-	setAttr ".pt[67]" -type "float3" 0 1.2055438 0 ;
-	setAttr ".pt[68]" -type "float3" -0.0047511826 0.6983766 0 ;
-	setAttr ".pt[69]" -type "float3" 0 1.2055438 0 ;
-	setAttr ".pt[70]" -type "float3" 0 1.7668213 0 ;
-	setAttr ".pt[71]" -type "float3" -0.0066535082 1.6907535 0 ;
-	setAttr ".pt[72]" -type "float3" 0 0.67810094 0 ;
-	setAttr ".pt[73]" -type "float3" 0 0.55211449 0 ;
-	setAttr ".pt[74]" -type "float3" 0 0.45233935 0 ;
-	setAttr ".pt[75]" -type "float3" 0 0.23613948 0 ;
-	setAttr ".pt[77]" -type "float3" 0 0.18796076 0 ;
-	setAttr ".pt[80]" -type "float3" -0.020626962 -0.01227028 0 ;
-	setAttr ".pt[83]" -type "float3" 0 -0.0023698558 0 ;
-	setAttr ".pt[84]" -type "float3" 0 -0.036198545 0 ;
-	setAttr ".pt[85]" -type "float3" 0 -0.25077903 0 ;
-	setAttr ".pt[86]" -type "float3" -0.017120367 -0.050559856 0 ;
-	setAttr ".pt[87]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[88]" -type "float3" 0 0.18796076 0 ;
-	setAttr ".pt[89]" -type "float3" 0 0.23246619 0 ;
-	setAttr ".pt[90]" -type "float3" 0 0.45233935 0 ;
-	setAttr ".pt[91]" -type "float3" 0 0.45233935 0 ;
-	setAttr ".pt[92]" -type "float3" 0 0.45233935 0 ;
-	setAttr ".pt[93]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[94]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[95]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[96]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[97]" -type "float3" 0 0.38206503 0 ;
-	setAttr ".pt[98]" -type "float3" -0.023980096 0 -0.059592161 ;
-	setAttr ".pt[99]" -type "float3" -0.023980096 0 -0.0039255554 ;
-	setAttr ".pt[100]" -type "float3" -0.023980096 0 -0.0039255554 ;
-	setAttr ".pt[101]" -type "float3" -0.023980096 0 -0.0039255554 ;
-	setAttr ".pt[102]" -type "float3" -0.023980096 0 -0.059592161 ;
-	setAttr ".pt[103]" -type "float3" -0.041180544 -0.15831561 -0.074472688 ;
-	setAttr ".pt[104]" -type "float3" -0.042035241 -0.15831561 0 ;
-	setAttr ".pt[105]" -type "float3" -0.042196557 -0.15831561 -9.3823151e-18 ;
-	setAttr ".pt[106]" -type "float3" -0.041129727 -0.15831561 0 ;
-	setAttr ".pt[107]" -type "float3" -0.044315219 -0.15831561 0.074472688 ;
+	setAttr -s 108 ".pt[0:107]" -type "float3"  0.085596032 0.38206503 0 
+		0 0.14941935 -0.057559356 0.085596032 1.3405236 0 -0.0047511826 0.6983766 -0.090196669 
+		0.085596032 1.3405236 0 -0.0047511826 0.6983766 0.090196669 0.085596032 0.38206503 
+		0 0 0.14941935 0.057559356 0 0.66315025 0 0 -0.11087372 -0.092884108 0 0.33887261 
+		-0.018830054 0 1.7668213 -0.10592751 0.085596032 0.74144191 0 0 1.7668213 0 -0.0047511826 
+		0.6983766 0 0 1.7668213 0.10592751 0.085596032 1.4216831 0 0 0.63706517 0 0 0.33887261 
+		0.018830054 0 -0.12029412 0.092884108 0.085596032 0.74144191 0 0 -0.30425534 0 0 
+		0.14941935 0 0.085596032 0.38206503 0 0 0.33887261 0 0.085596032 0.74144191 0 0.0027776561 
+		0.16098724 0 0.085596032 0.64025521 0 0.0074963472 -0.16227354 -0.19579072 0 0.16098724 
+		0 -0.002392187 0.66315025 0 0.0030532712 1.6907535 0 0.085596032 1.4216831 0 0.0023351328 
+		1.6907535 -0.091828339 0 1.7668213 0 0.0039992966 1.6907535 0 0.0069035301 1.1338552 
+		0 0.085596032 0.84269518 0 0.00497767 1.6907535 0.091828339 0 1.1338552 0 0.0068627847 
+		0.63706517 0 0.0088673597 -0.16227354 0 0.085596032 0.38206503 0 0.0092532188 -0.16227354 
+		0.19579072 0 -0.25320622 0 0.0066225673 -0.16227354 0 0 0.26188788 0 0 0.26188788 
+		-0.017836755 0 0.14941935 -0.012005215 0 0.26188788 0 0 0.33887261 -0.017539795 0.085596032 
+		0.64025521 0 0.085596032 0.64025521 0 0.085596032 0.64025521 0 0.085596032 0.74144191 
+		0 0 0.13313983 -0.14626016 0 0 -0.036999434 0 0.36382106 -0.15493153 0 0.74660903 
+		-0.15116401 0 0.45233935 -0.088154741 0 1.2055438 -0.12446212 0 1.0974463 0 -0.0009848671 
+		1.0974463 0 0.085596032 0.84269536 0 0 1.2055438 -0.049827307 -0.0047511826 0.6983766 
+		-0.03067019 0 1.2055438 0 0 1.2055438 0.049827307 -0.0047511826 0.6983766 0.03067019 
+		0 1.2055438 0.12446212 0 1.7668213 0 0.0053990809 1.6907535 0 0.085596032 1.4216831 
+		0 0 0.83557218 0.15116401 0 0.45233935 0.088154741 0 0.51959693 0.15493153 0 0.28345743 
+		0.14626016 0 0.26188788 0.017836755 0 0 0.036999434 0 0.18590848 0 0.008589237 0.17363821 
+		0 0 0 0.055795975 0 0.14941935 0.012005215 0 -0.0023698558 0 0 -0.036198545 -0.055795975 
+		0 -0.25077903 0 0.0062457216 -0.16227354 0 0.085596032 0.38206503 0 0 0.26188788 
+		0 0 0.33887261 0.017539795 0 0.45233935 0.020123653 0 0.45233935 0 0 0.45233935 -0.020123653 
+		0.085596032 0.64025521 0 0.085596032 0.74144191 0 0.085596032 0.84269518 0 0.085596032 
+		0.84269518 0 0.085596032 0.84269518 0 0.0073515242 0 -0.15658434 0.0084799509 0 -0.0039255554 
+		0.0084799509 0 -0.0039255554 0.0084799509 0 -0.0039255554 0.0084799509 0 0.14848915 
+		-0.0054239123 -0.27892753 -0.19717056 -0.0069196881 -0.27892753 0 -0.0064427974 -0.27892753 
+		-2.3455788e-17 -0.0079386653 -0.27892753 0 -0.011124163 -0.27892753 0.19696531;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "2CE1A516-AD48-85CE-4FD6-EE95FFBF9E32";

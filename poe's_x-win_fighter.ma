@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: poe's_x-win_fighter.ma
-//Last modified: Fri, Nov 11, 2016 12:42:30 PM
+//Last modified: Fri, Nov 11, 2016 12:43:14 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2A7249C0-AE46-E7EA-770F-8CB275091290";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.2520753253843702 3.1020641240432005 -7.9949139978960684 ;
-	setAttr ".r" -type "double3" 357.26164713392666 535.80000000015946 0 ;
+	setAttr ".t" -type "double3" 6.6733382258656579 5.6114506068758772 4.9033387459874254 ;
+	setAttr ".r" -type "double3" 339.26164713392575 411.80000000015553 2.5715649280889393e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "28346F1F-DA49-F391-4572-789B374E1D01";
 	setAttr -k off ".v" no;
